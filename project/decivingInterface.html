@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karak Mqanes Signature – Free WiFi Login</title>
+  <style>
+    :root {
+      --primary-yellow: #f9b400;
+      --secondary-black: #050505;
+      --accent-orange: #ff8a3d;
+      --background-cream: #111317;
+      --card-surface: #1a1d24;
+      --text-primary: #f5f5f5;
+      --text-secondary: rgba(245, 245, 245, 0.72);
+      --border-muted: rgba(245, 245, 245, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top right, rgba(249, 180, 0, 0.12), transparent 55%),
+                  linear-gradient(135deg, #050607, #111317 65%, #050607);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .login-card {
+      background: var(--card-surface);
+      max-width: 420px;
+      width: 100%;
+      padding: 48px 40px;
+      border-radius: 32px;
+      box-shadow: 0 28px 60px rgba(16, 16, 16, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .login-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255, 138, 61, 0.12), transparent 60%),
+                  radial-gradient(circle at bottom left, rgba(249, 180, 0, 0.16), transparent 55%);
+      pointer-events: none;
+    }
+
+    .brand {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .brand-logo {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: var(--primary-yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--secondary-black);
+      border: 4px solid var(--secondary-black);
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.04em;
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .tagline {
+      margin: 8px 0 0;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(16, 16, 16, 0.6);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border-muted);
+      font-size: 16px;
+      background-color: rgba(5, 5, 5, 0.35);
+      color: var(--text-primary);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: var(--accent-orange);
+      box-shadow: 0 0 0 4px rgba(255, 138, 61, 0.18);
+      background-color: rgba(5, 5, 5, 0.55);
+    }
+
+    .order-button {
+      margin-top: 12px;
+      border: none;
+      border-radius: 18px;
+      background: var(--primary-yellow);
+      color: var(--secondary-black);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .order-button:hover,
+    .order-button:focus {
+      outline: none;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(249, 180, 0, 0.3);
+      background: #ffbe1b;
+    }
+
+    .info-text {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .login-card {
+        padding: 40px 28px;
+        border-radius: 24px;
+      }
+
+      .brand-name {
+        font-size: 24px;
+      }
+
+      .order-button {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card" role="main">
+    <form class="form" aria-label="Free WiFi login form">
+      <div>
+        <label for="email-input">Email Address</label>
+        <input id="email-input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="password-input">Password</label>
+        <input id="password-input" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="order-button">Click Here for Free WiFi</button>
+    </form>
+
+    <p class="info-text">
+      Access complimentary WiFi while you savor our signature karak blends and gourmet bites.
+    </p>
+  </div>
+</body>
+</html>
+
